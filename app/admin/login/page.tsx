@@ -21,7 +21,7 @@ export default async function AdminLoginPage({ searchParams }: { searchParams: P
           <p className="mt-2 mb-7 text-sm leading-6 text-slate-500">Sign in with your recruitment account to manage applications.</p>
           {params.error === 'not-authorized' && <p role="alert" className="mb-4 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-sm text-amber-800">This account is not authorized to access the recruitment dashboard.</p>}
           <AdminLoginForm />
-          <p className="mt-5 text-center text-xs leading-5 text-slate-400">Only accounts listed in the server-side <code className="rounded bg-slate-100 px-1 py-0.5">ADMIN_EMAILS</code> allowlist can access applicant records.</p>
+          <p className="mt-5 text-center text-xs leading-5 text-slate-400">Only accounts listed in the server-side allowlist can access applicant records.</p>
         </div>
       </section>
     </main>

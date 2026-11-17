@@ -28,6 +28,7 @@ export default function HomePage() {
       <section id="application" className="mx-auto grid max-w-7xl gap-10 px-5 py-12 sm:px-8 sm:py-16 lg:grid-cols-[.72fr_1.28fr] lg:gap-20 lg:py-20">
         <aside className="lg:sticky lg:top-8 lg:h-fit">
           <h2 className="mt-3 text-3xl font-semibold tracking-[-.035em] text-[#14233f] sm:text-4xl">Apply in a few easy steps.</h2>
+          
           <p className="mt-4 max-w-md leading-7 text-slate-600">Tell us a little about yourself and attach your CV. We&apos;ll be in touch if your experience is a match.</p>
           <ul className="mt-8 flex flex-col gap-4">
             {benefits.map((benefit) => <li key={benefit} className="flex items-center gap-3 text-sm font-medium text-slate-600"><span className="grid size-6 place-items-center rounded-full bg-blue-100 text-blue-700"><Check size={14} /></span>{benefit}</li>)}
