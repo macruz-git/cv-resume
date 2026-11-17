@@ -1,5 +1,6 @@
 import { ApplicationForm } from '@/components/application-form'
 import { ArrowUpRight, BriefcaseBusiness, Check, LockKeyhole, ShieldCheck } from 'lucide-react'
+import Link from "next/link";
 
 const benefits = [
   'Easy Online Application',
@@ -18,7 +19,7 @@ export default function HomePage() {
           <span className="hidden items-center gap-2 text-sm font-medium text-slate-500 sm:flex">
             <span className="size-2 rounded-full bg-emerald-500" /> Applications open
           </span>
-          <a href="#application" className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold transition hover:border-blue-300 hover:text-blue-700">Submit your CV <ArrowUpRight className="ml-1 inline" size={15} /></a>
+          <Link href="/admin" target="_blank" rel="noopener noreferrer" className="rounded-full border border-slate-200 px-4 py-2 text-sm font-semibold transition hover:border-blue-300 hover:text-blue-700">Admin Login<ArrowUpRight className="ml-1 inline" size={15} /></Link>
         </div>
       </header>
 
